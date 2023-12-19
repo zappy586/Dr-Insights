@@ -1,0 +1,7 @@
+langchain
+chromadb
+flask
+flask-cors
+sentence-transformers
+openai
+llama-cpp-python
