@@ -1,0 +1,315 @@
+
+body, html {
+	background: #090d00;
+}
+
+/* BACKGROUND */
+
+#bg {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+}
+
+#bg canvas {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+  z-index: -1;
+}
+/* .amogus{
+  background-color: #ee5959;
+  color: black;
+  font-family: Kalnia;
+  margin:0;
+} */
+.flex-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#title1 {
+  border: 5px solid rgb(21, 1, 174);
+  box-shadow: 0 16px 32px 0px rgba(0, 0, 0, 0.715);
+  display: block;
+  padding: 10px;
+  /* background-color: #279af2; */
+  margin-top: 40px;
+  background-color: rgb(0, 102, 106);
+  /* backdrop-filter: blur(20px); */
+  border-radius: 10px;
+  font-family: Kalnia;
+  font-weight: bold;
+  color: #140042;
+  font-size: 96px;
+  justify-content: center;
+  text-align: center;
+}
+
+.forms{
+  width: 100%;
+  background-color: rgb(23, 39, 134);
+  /* background-color: rgba(0, 255, 217, 0.245); */
+  padding:5px;
+  display: flex;
+  position: fixed;
+  gap:20px;
+  bottom: 0px;
+  /* left:15%; */
+  /* grid: auto;
+  grid-template-columns: auto; */
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.in{
+  position:relative;
+  padding: 40px;
+  color: black;
+  font-size: x-large;
+  text-indent: 5px;
+  /* font-weight: ; */
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  /* text-align: center; */
+  background-color: #d3de3284;
+}
+
+
+
+.fake-div{
+  bottom: 0px;
+  height:100px;
+}
+.op{
+  position: relative;
+  padding: 40px;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  /* text-align: center; */
+  color: white;
+  font-size: x-large;
+  /* font-weight: bold; */
+  background-color: #016a707d;
+  white-space: pre;
+  text-wrap:pretty;
+  
+}
+
+.aiLogo{
+  height: 75px;
+  margin-right: 20px;
+}
+
+#submit-btn{
+  margin-left: 50px;
+  margin-right: 30px;
+}
+
+
+.labels{
+  font-size: large;
+}
+
+#fileInput{
+  display: none;
+}
+
+.img{
+  display: flex;
+  justify-content: center;
+  height: 800px;
+}
+
+#inputData{
+  padding: 10px;
+  text-indent: 10px;
+  border-radius: 0px 10px 0px 10px;
+  background-color: rgb(0, 0, 0);
+  /* background: linear-gradient(45deg, #ee5959, #279af2); */
+  color:#ffffff;
+  width:650px;
+  height: 40px;
+  font-size: x-large;
+  /* font-weight:800; */
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.uploadLogo{
+  height: 40px;
+  width:40px;
+}
+
+.spinner{
+  height: 150px;
+  margin-left: 20px;
+}
+
+.spinnerText{
+  font-family: Kalnia;
+  color: #140042;
+}
+
+@media screen and (max-width:1000px) {
+  .forms{
+      display: grid;
+      grid-template-columns: auto;
+      grid-gap: 5px;
+      flex-wrap: wrap;
+      bottom: 50px;
+      /* left:10%; */
+      /* grid: auto;
+      grid-template-columns: auto; */
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+  }
+  
+}
+
+
+
+input,
+span,
+label,
+textarea {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  display: block;
+  margin: 5px;
+  padding: 5px;
+  border: none;
+  font-size: 22px;
+}
+
+textarea:focus,
+input:focus {
+  outline: 0;
+}
+/* Question */
+
+input.question,
+textarea.question {
+  font-size:xxx-large;
+  font-weight: 100;
+  border-radius: 2px;
+  color: rgb(0, 186, 186);
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin: 0;
+  border: none;
+  width: 100%;
+  background: rgba(0, 0, 0, 0);
+  transition: padding-top 0.2s ease, margin-top 0.2s ease;
+  overflow-x: hidden; /* Hack to make "rows" attribute apply in Firefox. */
+}
+/* Underline and Placeholder */
+
+input.question + label,
+textarea.question + label {
+  display: block;
+  position: relative;
+  white-space: nowrap;
+  padding: 0;
+  margin: 0;
+  width: 20%;
+  border-top: 5px solid rgb(0, 153, 255);
+  -webkit-transition: width 0.4s ease;
+  transition: width 0.4s ease;
+  height: 0px;
+}
+
+input.question:focus + label,
+textarea.question:focus + label {
+  width: 80%;
+}
+
+input.question:focus,
+input.question:valid {
+  padding-top: 35px;
+}
+
+textarea.question:valid,
+textarea.question:focus {
+  margin-top: 35px;
+}
+
+input.question:focus + label > span,
+input.question:valid + label > span {
+  top: -100px;
+  font-size: 22px;
+  /* font-weight: bold; */
+  color:#999;
+}
+
+textarea.question:focus + label > span,
+textarea.question:valid + label > span {
+  top: -150px;
+  font-size: 22px;
+  color: #333333;
+}
+
+input.question:valid + label,
+textarea.question:valid + label {
+  border-color: rgb(0, 102, 255);
+}
+
+input.question:invalid,
+textarea.question:invalid {
+  box-shadow: none;
+}
+
+input.question + label > span,
+textarea.question + label > span {
+  font-weight: 300;
+  margin: 0;
+  position: absolute;
+  color: rgb(0, 158, 198);
+  font-size: 24px;
+  top: -66px;
+  left: 0px;
+  width:100px;
+  z-index: -1;
+  -webkit-transition: top 0.2s ease, font-size 0.2s ease, color 0.2s ease;
+  transition: top 0.2s ease, font-size 0.2s ease, color 0.2s ease;
+}
+
+input[type="submit"] {
+  -webkit-transition: opacity 0.2s ease, background 0.2s ease;
+  transition: opacity 0.2s ease, background 0.2s ease;
+  display: block;
+  opacity: 0;
+  margin: 10px 0 0 0;
+  padding: 10px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background: #EEE;
+}
+
+input[type="submit"]:active {
+  background: #999;
+}
+
+input.question:valid ~ input[type="submit"], textarea.question:valid ~ input[type="submit"] {
+  -webkit-animation: appear 1s forwards;
+  animation: appear 1s forwards;
+}
+
+input.question:invalid ~ input[type="submit"], textarea.question:invalid ~ input[type="submit"] {
+  display: none;
+}
+
+@-webkit-keyframes appear {
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes appear {
+  100% {
+    opacity: 1;
+  }
+}

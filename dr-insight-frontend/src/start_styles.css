@@ -1,0 +1,343 @@
+
+body, html {
+	background: #090d00;
+}
+
+/* BACKGROUND */
+
+#bg {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+}
+
+#bg canvas {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+  z-index: -1;
+}
+/* .amogus{
+  background-color: #ee5959;
+  color: black;
+  font-family: Kalnia;
+  margin:0;
+} */
+.flex-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#title1 {
+  border: 5px solid rgb(21, 1, 174);
+  box-shadow: 0 16px 32px 0px rgba(0, 0, 0, 0.715);
+  display: block;
+  padding: 10px;
+  /* background-color: #279af2; */
+  margin-top: 40px;
+  background-color: rgb(0, 102, 106);
+  /* backdrop-filter: blur(20px); */
+  border-radius: 10px;
+  font-family: Kalnia;
+  font-weight: bold;
+  color: #140042;
+  font-size: 96px;
+  justify-content: center;
+  text-align: center;
+}
+
+.forms{
+  width: 100%;
+  background-color: rgb(23, 39, 134);
+  /* background-color: rgba(0, 255, 217, 0.245); */
+  padding:5px;
+  display: flex;
+  position: fixed;
+  gap:20px;
+  bottom: 0px;
+  /* left:15%; */
+  /* grid: auto;
+  grid-template-columns: auto; */
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.in{
+  position:relative;
+  padding: 40px;
+  color: black;
+  font-size: x-large;
+  text-indent: 5px;
+  /* font-weight: ; */
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  /* text-align: center; */
+  background-color: #d3de3284;
+}
+
+
+
+.fake-div{
+  bottom: 0px;
+  height:100px;
+}
+.op{
+  position: relative;
+  padding: 40px;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  /* text-align: center; */
+  color: white;
+  font-size: x-large;
+  /* font-weight: bold; */
+  background-color: #016a707d;
+  white-space: pre;
+  text-wrap:pretty;
+  
+}
+
+.aiLogo{
+  height: 75px;
+  margin-right: 20px;
+}
+
+#submit-btn{
+  margin-left: 50px;
+  margin-right: 30px;
+}
+
+
+.labels{
+  font-size: large;
+}
+
+#fileInput{
+  display: none;
+}
+
+.img{
+  display: flex;
+  justify-content: center;
+  height: 800px;
+}
+
+#inputData{
+  padding: 10px;
+  text-indent: 10px;
+  border-radius: 0px 10px 0px 10px;
+  background-color: rgb(0, 0, 0);
+  /* background: linear-gradient(45deg, #ee5959, #279af2); */
+  color:#ffffff;
+  width:650px;
+  height: 40px;
+  font-size: x-large;
+  /* font-weight:800; */
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.uploadLogo{
+  height: 40px;
+  width:40px;
+}
+
+.spinner{
+  height: 150px;
+  margin-left: 20px;
+}
+
+.spinnerText{
+  font-family: Kalnia;
+  color: #140042;
+}
+
+@media screen and (max-width:1000px) {
+  .forms{
+      display: grid;
+      grid-template-columns: auto;
+      grid-gap: 5px;
+      flex-wrap: wrap;
+      bottom: 50px;
+      /* left:10%; */
+      /* grid: auto;
+      grid-template-columns: auto; */
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+  }
+  
+}
+
+/* pricing styles */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.pricing {
+  margin-top: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pricing-card {
+  border: 2px solid white;
+  font-size:large;
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  display: flex;
+  background-color: rgba(0, 0, 0, 0);
+  backdrop-filter: blur(15px);
+  flex-direction: column;
+  justify-content: center;
+  padding: 10px;
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 16px 32px 0px rgba(0, 0, 0, 0.1);
+  margin-left: 50px;
+}
+
+.pricing-card-heading {
+  padding: 10px;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.pricing-card-heading-free {
+  background-color: #393495;
+}
+
+.pricing-card-heading-lite {
+  background: linear-gradient(
+    90deg,
+    rgba(194, 209, 255, 1) 0%,
+    rgb(68, 71, 255) 100%
+  );
+  border-radius: 10px;
+  color: #000000;
+}
+
+.pricing-card-heading-pro {
+  background: linear-gradient(
+    90deg,
+    rgba(255, 177, 195, 1) 0%,
+    rgba(255, 203, 112, 1) 100%
+  );
+  border-radius: 10px;
+  color: #000000;
+}
+
+.pricing-card-list {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  margin: 25px 0 45px 65px;
+}
+
+.pricing-card-list-item {
+  position: relative;
+}
+
+.icon-yes::before {
+  
+  position: absolute;
+  left: -30px;
+  top: -5px;
+  display: inline-block;
+  content: "";
+  width: 20px;
+  height: 25px;
+  background: url("https://cdnjs.cloudflare.com/ajax/libs/open-iconic/1.1.1/png/check-4x.png")
+    no-repeat;
+  background-size: 15px;
+  background-position: bottom center;
+  filter: invert(75%) sepia(27%) saturate(459%) hue-rotate(76deg)
+    brightness(90%) contrast(88%);
+}
+
+.icon-no::before {
+  position: absolute;
+  left: -27px;
+  top: -5px;
+  display: inline-block;
+  content: "";
+  width: 20px;
+  height: 25px;
+  background: url("https://cdnjs.cloudflare.com/ajax/libs/open-iconic/1.1.1/png/plus-4x.png")
+    no-repeat;
+  background-size: 15px;
+  background-position: bottom center;
+  filter: invert(45%) sepia(88%) saturate(908%) hue-rotate(312deg)
+    brightness(90%) contrast(86%);
+  transform: rotate(45deg);
+}
+
+.icon-no {
+  color: #999;
+}
+
+.icon-yes{
+  color: #fff;
+}
+
+.pricing-card-btn {
+  width: 85%;
+  font-size: 16px;
+  padding: 15px;
+  margin-left: 7.5%;
+  border: 1px solid #27264b;
+  border-radius: 10px;
+  background-color: #fff;
+  color: #27264b;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: background-color 250ms ease-in-out;
+}
+
+.pricing-card-btn:hover {
+  background-color: rgb(228, 228, 240);
+}
+
+.pricing-card-highlight .pricing-card-btn {
+  border: none;
+  color: #fff;
+  background-color: #27264b;
+}
+
+.pricing-card-highlight .pricing-card-btn:hover {
+  background-color: #9390db;
+}
+
+.pricing-card-price {
+  text-align: center;
+  font-size: 28px;
+  line-height: 28px;
+  font-weight: 500;
+  margin-bottom: 15px;
+  color: white;
+}
+
+.pricing-card-price-text {
+  font-weight: 400;
+  font-size: 20px;
+  color: white;
+}
