@@ -2,8 +2,8 @@
 ## This is a medical LLM chatbot desktop app that runs completely local using an open-source LLM and RAG(retrieval augmented generation).
 ### Note: This is not a replacement for actual medical advise. This is merely a research project that I have worked on.
 
-#Demo:
-https://www.youtube.com/watch?v=qGTXk2GxTSo&ab_channel=ZAPPY
+# Demo:
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/qGTXk2GxTSo/0.jpg)](https://www.youtube.com/watch?v=qGTXk2GxTSo)
 
 ## <ins> Installation </ins>
 ## There are 2 folders for frontend and backend. backend is a flask server that uses llama.cpp as model loader and frontend is using Electron.js.
