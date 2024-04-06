@@ -1,6 +1,6 @@
 # Dr-Insights
 ## This is a medical LLM chatbot desktop app that runs completely local using an open-source LLM and RAG(retrieval augmented generation).
-### Note: This is not a replacement for actual medical advise. This is merely a research project that I have worked on.
+## Note: This is not a replacement for actual medical advise. This is merely a research project that I have worked on.
 
 # Demo:
 [![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/qGTXk2GxTSo/0.jpg)](https://www.youtube.com/watch?v=qGTXk2GxTSo)
