@@ -1,4 +1,6 @@
 # Dr-Insights
+![image](https://github.com/zappy586/Dr-Insights/assets/89218647/1f8f7258-4f66-44bd-a185-33b2183d09c4)
+
 ## This is a medical LLM chatbot desktop app that runs completely local using an open-source LLM and RAG(retrieval augmented generation).
 * Note: This is not a replacement for actual medical advise. This is merely a research project that I have worked on.
 * Demo:
